@@ -1,19 +1,12 @@
-# JelvixFCMBundle #
+# MoskalyovdFCMBundle #
 Symfony bundle for [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)
   
 # Installation #
   To use this bundle in your project add following lines to your `composer.json`:
 
   ``` json
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:Jelvix/php_firebase_bundle"
-        }
-    ],
     "require": {
-        "Jelvix/php_firebase_bundle": "^0.1"
+        "moskalyovd/php_firebase_bundle": "^0.2"
     }
 
   ```
@@ -27,7 +20,7 @@ Symfony bundle for [Firebase Cloud Messaging](https://firebase.google.com/docs/c
 public function registerBundles()
 {
     $bundles = array(
-            new Jelvix\FCMBundle\JelvixFCMBundle(),
+            new Moskalyovd\FCMBundle\JelvixFCMBundle(),
     );
 }
   
@@ -36,7 +29,7 @@ public function registerBundles()
 # Configuration #
 
 ``` yaml
-jelvix_fcm:
+moskalyovd_fcm:
     server_key: 'your_server_key'
 
 ```
@@ -48,7 +41,7 @@ jelvix_fcm:
   <?php
   public function testAction()
   {
-        $client = $this->get('jelvix_fcm.client');
+        $client = $this->get('moskalyovd_fcm.client');
 
         $message = new Message();
         $message->addRecipient(new Device('token'));
