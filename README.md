@@ -6,7 +6,7 @@ Symfony bundle for [Firebase Cloud Messaging](https://firebase.google.com/docs/c
 
   ``` json
     "require": {
-        "moskalyovd/fcm-bundle: "^0.2"
+        "moskalyovd/fcm-bundle": "^0.2"
     }
 
   ```
