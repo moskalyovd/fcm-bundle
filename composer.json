@@ -1,10 +1,16 @@
 {
     "name": "moskalyovd/fcm-bundle",
     "description": "Symfony bundle for Firebase Cloud Messaging",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/moskalyovd/php-firebase-cloud-messaging"
+        }
+    ],
     "require": {
         "php": ">=5.3",
-        "guzzlehttp/guzzle": "*",
-        "sngrl/php-firebase-cloud-messaging": "@dev"
+        "guzzlehttp/guzzle": "^6.0.0",
+        "sngrl/php-firebase-cloud-messaging": "1.0"
     },
     "autoload": {
         "psr-4": {
