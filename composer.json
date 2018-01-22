@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.3",
         "guzzlehttp/guzzle": "^6.0.0",
-        "sngrl/php-firebase-cloud-messaging": "1.0"
+        "sngrl/php-firebase-cloud-messaging": "dev-master"
     },
     "autoload": {
         "psr-4": {
