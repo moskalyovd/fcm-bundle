@@ -20,7 +20,7 @@ Symfony bundle for [Firebase Cloud Messaging](https://firebase.google.com/docs/c
 public function registerBundles()
 {
     $bundles = array(
-            new Moskalyovd\FCMBundle\JelvixFCMBundle(),
+            new Moskalyovd\FCMBundle\MoskalyovdFCMBundle(),
     );
 }
   
