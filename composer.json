@@ -2,7 +2,8 @@
     "name": "moskalyovd/fcm-bundle",
     "description": "Symfony bundle for Firebase Cloud Messaging",
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.3",
+        "guzzlehttp/guzzle": "^6.0.0",
     },
     "autoload": {
         "psr-4": {
