@@ -3,7 +3,8 @@
     "description": "Symfony bundle for Firebase Cloud Messaging",
     "require": {
         "php": ">=5.3",
-        "guzzlehttp/guzzle": "^6.0.0"
+        "guzzlehttp/guzzle": "^6.0.0",
+        "sngrl/php-firebase-cloud-messaging": "dev-master"
     },
     "autoload": {
         "psr-4": {
