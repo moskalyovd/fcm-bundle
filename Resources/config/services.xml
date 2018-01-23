@@ -6,15 +6,13 @@
 
     <services>
         <service id="moskalyovd_fcm.client" class="paragraph1\phpFCM\Client">
-            <call method="injectHttpClient">
-                <argument type="service" id="GuzzleHttp\Client" />
-            </call>
             <call method="setApiKey">
                 <argument>%moskalyovd_fcm.server_key%</argument>
             </call>
         </service>
-        <service id="GuzzleHttp\Client">
-            <factory class="Moskalyovd\FCMBundle\Guzzle\Factory\GuzzleClientFactory" method="createGuzzleClient" />
+        <service id="FCM\GuzzleHttp\Client" public="false">
+            <factory class="Moskalyovd\FCMBundle\Guzzle\Factory\GuzzleClientFactory" method="createGuzzleClient"/>
+            <tag name="moskalyovd_fcm.guzzle_factory" />
         </service>
     </services>
 </container>
